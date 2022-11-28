@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Github Repository Finder</string>
+    <string name="downloads">Downloads</string>
+    <string name="enter_user_name">Enter username</string>
+    <string name="user_not_found">User not found</string>
+    <string name="download_error">Error downloading repository %s</string>
+    <string name="no_downloads">You don\'t have any downloads</string>
+    <string name="downloaded_repository_owner">User name: %s</string>
+    <string name="downloaded_repository_name">Repository: %s</string>
+</resources>
