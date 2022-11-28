@@ -1,4 +1,4 @@
-# github_repository_finder
+# Github Repository Finder
 
 App that finds GitHub repositories by username and allows to download them.<br />
 <br />
