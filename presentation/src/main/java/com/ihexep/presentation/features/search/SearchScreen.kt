@@ -1,4 +1,4 @@
-package com.ihexep.presentation.search
+package com.ihexep.presentation.features.search
 
 import android.Manifest
 import androidx.compose.foundation.background
@@ -17,7 +17,6 @@ import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
-import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -27,8 +26,8 @@ import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
 import com.ihexep.presentation.R
 import com.ihexep.presentation.common.Screen
-import com.ihexep.presentation.search.components.RepositoryListItem
-import com.ihexep.presentation.search.components.SearchAppBar
+import com.ihexep.presentation.features.search.components.RepositoryListItem
+import com.ihexep.presentation.features.search.components.SearchAppBar
 import com.ihexep.presentation.utils.toast
 import org.koin.androidx.compose.koinViewModel
 

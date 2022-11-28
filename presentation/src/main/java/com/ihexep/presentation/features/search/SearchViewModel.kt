@@ -1,4 +1,4 @@
-package com.ihexep.presentation.search
+package com.ihexep.presentation.features.search
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateMapOf

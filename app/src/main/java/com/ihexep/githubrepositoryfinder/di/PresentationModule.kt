@@ -1,7 +1,7 @@
 package com.ihexep.githubrepositoryfinder.di
 
-import com.ihexep.presentation.search.SearchViewModel
-import com.ihexep.presentation.downloads.DownloadsViewModel
+import com.ihexep.presentation.features.search.SearchViewModel
+import com.ihexep.presentation.features.downloads.DownloadsViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

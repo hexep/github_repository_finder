@@ -1,4 +1,4 @@
-package com.ihexep.presentation.search.components
+package com.ihexep.presentation.features.search.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -15,7 +15,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.ihexep.domain.model.GithubRepositoryModel
 import com.ihexep.presentation.R
-import com.ihexep.presentation.search.RepositoryDownloadState
+import com.ihexep.presentation.features.search.RepositoryDownloadState
 
 @Composable
 fun RepositoryListItem(

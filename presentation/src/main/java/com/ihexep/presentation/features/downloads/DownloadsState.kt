@@ -1,4 +1,4 @@
-package com.ihexep.presentation.downloads
+package com.ihexep.presentation.features.downloads
 
 import com.ihexep.domain.model.GithubRepositoryModel
 

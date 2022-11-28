@@ -1,4 +1,4 @@
-package com.ihexep.presentation.downloads.components
+package com.ihexep.presentation.features.downloads.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

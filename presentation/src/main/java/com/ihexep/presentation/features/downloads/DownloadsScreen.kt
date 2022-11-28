@@ -1,4 +1,4 @@
-package com.ihexep.presentation.downloads
+package com.ihexep.presentation.features.downloads
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -15,7 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.ihexep.presentation.R
-import com.ihexep.presentation.downloads.components.DownloadedRepositoryListItem
+import com.ihexep.presentation.features.downloads.components.DownloadedRepositoryListItem
 import org.koin.androidx.compose.koinViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)

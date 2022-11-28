@@ -1,4 +1,4 @@
-package com.ihexep.presentation.search.components
+package com.ihexep.presentation.features.search.components
 
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*

@@ -13,8 +13,8 @@ import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import com.ihexep.presentation.common.Screen
-import com.ihexep.presentation.downloads.DownloadsScreen
-import com.ihexep.presentation.search.SearchScreen
+import com.ihexep.presentation.features.downloads.DownloadsScreen
+import com.ihexep.presentation.features.search.SearchScreen
 import com.ihexep.presentation.theme.GithubRepositoryFinderTheme
 
 class MainActivity : ComponentActivity() {
