@@ -1,14 +1,20 @@
 # Github Repository Finder
 
-App that finds GitHub repositories by username and allows to download them.<br />
-<br />
-It uses:<br />
-• Modularization <br />
-• Clean architecture with MVVM <br />
-• Coroutenes <br />
-• Koin for dependency injection <br />
-• Room for local database <br />
-• Retrofit for network request <br />
-• Jetpack Compose for ui <br />
+![app_logo](https://user-images.githubusercontent.com/29166409/204320848-139619a5-3780-46ed-ace6-80fa88dd03dc.png)
 
+About
+-----
+App that finds GitHub repositories by username and allows to download them.
+
+It uses:
+* Modularization
+* Clean architecture with MVVM
+* Coroutenes
+* Koin for dependency injection
+* Room for local database
+* Retrofit for network request
+* Jetpack Compose for ui
+
+Demonstration
+-------------
 https://user-images.githubusercontent.com/29166409/204309996-010ab572-d02e-422e-a6f0-f42d5815363f.mp4
