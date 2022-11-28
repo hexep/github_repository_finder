@@ -9,7 +9,7 @@ App that finds GitHub repositories by username and allows to download them.
 It uses:
 * Modularization
 * Clean architecture with MVVM
-* Coroutenes
+* Coroutines
 * Koin for dependency injection
 * Room for local database
 * Retrofit for network request
