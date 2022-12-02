@@ -94,7 +94,7 @@ fun SearchAppBar(
                     modifier = Modifier
                         .align(Alignment.Center)
                         .background(
-                            color = MaterialTheme.colorScheme.background,
+                            color = MaterialTheme.colorScheme.primary,
                             shape = RoundedCornerShape(percent = 50)
                         )
                         .fillMaxWidth(searchBarWeight)

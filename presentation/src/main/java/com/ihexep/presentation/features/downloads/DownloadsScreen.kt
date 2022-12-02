@@ -1,6 +1,5 @@
 package com.ihexep.presentation.features.downloads
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -29,9 +28,10 @@ fun DownloadsScreen(
 
     Column(
         modifier = Modifier
+            .displayCutoutPadding()
+            .navigationBarsPadding()
             .nestedScroll(scrollBehavior.nestedScrollConnection)
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
     ) {
         TopAppBar(
             title = { Text(stringResource(R.string.downloads)) },

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.GithubRepositoryFinder" parent="android:Theme.Material.Light.NoActionBar"/>
+    <style name="Theme.GithubRepositoryFinderCommon" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.GithubRepositoryFinder" parent="Theme.GithubRepositoryFinderCommon"/>
 
     <!-- Splash screen style -->
     <style name="Theme.GithubRepositoryFinder.Splash" parent="Theme.GithubRepositoryFinder">
         <item name="android:windowBackground">@drawable/splash_screen</item>
-        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

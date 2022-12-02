@@ -1,16 +1,12 @@
 package com.ihexep.presentation.features.search
 
 import android.Manifest
-import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -40,13 +36,14 @@ fun SearchScreen(navController: NavController) {
     val context = LocalContext.current
     val uriHandler = LocalUriHandler.current
     val writePermissionState = rememberPermissionState(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(rememberTopAppBarState())
+    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(state = rememberTopAppBarState())
     val focusManager = LocalFocusManager.current
 
     LaunchedEffect(Unit) { viewModel.errorState.collect { context.toast(it) } }
     Column(modifier = Modifier
+        .displayCutoutPadding()
+        .navigationBarsPadding()
         .nestedScroll(scrollBehavior.nestedScrollConnection)
-        .background(MaterialTheme.colorScheme.primary)
         .pointerInput(Unit) { detectTapGestures(onTap = { focusManager.clearFocus() }) }
     ) {
         SearchAppBar(
@@ -57,7 +54,7 @@ fun SearchScreen(navController: NavController) {
         if (searchState.isLoading) {
             LinearProgressIndicator(
                 color = MaterialTheme.colorScheme.tertiary,
-                trackColor = MaterialTheme.colorScheme.primary,
+                trackColor = MaterialTheme.colorScheme.background,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(2.dp)

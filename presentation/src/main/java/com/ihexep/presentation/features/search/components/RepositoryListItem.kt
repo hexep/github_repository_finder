@@ -32,7 +32,7 @@ fun RepositoryListItem(
             .fillMaxWidth()
             .height(50.dp)
             .clip(RoundedCornerShape(10.dp))
-            .background(MaterialTheme.colorScheme.background)
+            .background(MaterialTheme.colorScheme.primary)
             .clickable { onClick(repository) }
     ) {
         Icon(
